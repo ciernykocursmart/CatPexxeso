@@ -9,7 +9,7 @@
     "build": "electron-builder"
   },
   "build": {
-    "appId": "com.catpexeso.game",
+    "appId": "59513Lukes.CatPexeso",
     "productName": "Cat Pexeso",
     "win": {
       "target": [
@@ -17,9 +17,9 @@
       ]
     },
     "appx": {
-      "publisher": "CN=Kocur",
+      "publisher": "CN=5B8EDAC0-7E93-4119-961E-9118180BF0FD",
       "publisherDisplayName": "Kocur",
-      "identityName": "com.catpexeso.game"
+      "identityName": "59513Lukes.CatPexeso"
     },
     "directories": {
       "output": "dist"
