@@ -1,0 +1,33 @@
+{
+  "name": "cat-pexeso",
+  "version": "1.0.0",
+  "description": "Cat Pexeso - Cute Cat Memory Game",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "build": {
+    "appId": "com.catpexeso.game",
+    "productName": "Cat Pexeso",
+    "win": {
+      "target": [
+        "msix"
+      ]
+    },
+    "msix": {
+      "publisher": "CN=CatPexesoPublisher",
+      "identityName": "com.catpexeso.game"
+    },
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "src/**/*"
+    ]
+  },
+  "devDependencies": {
+    "electron": "^30.0.0",
+    "electron-builder": "^24.13.0"
+  }
+}

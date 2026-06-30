@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Pexeso 🐾</title>
+    <!-- Google Font for playful and premium look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1 class="bounce-title">Cat Pexeso <span class="paw-icon">🐾</span></h1>
+            <p class="subtitle">Find all the matching cats!</p>
+        </header>
+
+        <!-- Control and Stats Dashboard -->
+        <section class="dashboard glass">
+            <div class="control-panel">
+                <div class="difficulty-group">
+                    <button class="btn diff-btn active" data-difficulty="easy">Easy (3x4)</button>
+                    <button class="btn diff-btn" data-difficulty="medium">Medium (4x4)</button>
+                    <button class="btn diff-btn" data-difficulty="hard">Hard (5x6)</button>
+                </div>
+                <div class="action-group">
+                    <button id="sound-btn" class="btn icon-btn" title="Mute/Unmute Sound">
+                        <span class="btn-icon">🔊</span>
+                    </button>
+                    <button id="restart-btn" class="btn primary-btn">New Game 🔄</button>
+                </div>
+            </div>
+
+            <div class="stats-panel">
+                <div class="stat-card">
+                    <span class="stat-label">Score</span>
+                    <span id="score-val" class="stat-value">0</span>
+                    <span id="combo-badge" class="badge hidden">x1 Combo</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-label">Pairs</span>
+                    <span id="pairs-val" class="stat-value">0 / 0</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-label">Moves</span>
+                    <span id="moves-val" class="stat-value">0</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-label">Time</span>
+                    <span id="timer-val" class="stat-value">00:00</span>
+                </div>
+                <div class="stat-card high-score-card">
+                    <span class="stat-label">High Score</span>
+                    <span id="highscore-val" class="stat-value">0</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Game Area -->
+        <main class="game-container">
+            <div id="game-board" class="game-board easy">
+                <!-- Cards will be dynamically injected here via JS -->
+            </div>
+        </main>
+
+        <footer>
+            <p>Made with 💜 for cat lovers</p>
+        </footer>
+    </div>
+
+    <!-- Win Celebration Modal Overlay -->
+    <div id="win-modal" class="modal-overlay hidden">
+        <div class="modal-content glass pop-in">
+            <div class="modal-emoji">🎉🐈🎉</div>
+            <h2>Meow-tastic Victory!</h2>
+            <p>You successfully matched all cat pairs!</p>
+            
+            <div class="modal-stats">
+                <div class="modal-stat-item">
+                    <span class="modal-stat-label">Final Score</span>
+                    <span id="modal-score" class="modal-stat-val">0</span>
+                </div>
+                <div class="modal-stat-item">
+                    <span class="modal-stat-label">Total Time</span>
+                    <span id="modal-time" class="modal-stat-val">00:00</span>
+                </div>
+                <div class="modal-stat-item">
+                    <span class="modal-stat-label">Moves</span>
+                    <span id="modal-moves" class="modal-stat-val">0</span>
+                </div>
+                <div class="modal-stat-item">
+                    <span class="modal-stat-label">Best Combo</span>
+                    <span id="modal-combo" class="modal-stat-val">x1</span>
+                </div>
+            </div>
+
+            <div id="new-record-banner" class="new-record hidden">
+                🏆 New High Score! 🏆
+            </div>
+
+            <button id="modal-play-again" class="btn primary-btn large-btn">Play Again 🐾</button>
+        </div>
+    </div>
+
+    <!-- Canvas for Confetti Effects -->
+    <canvas id="confetti-canvas"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
