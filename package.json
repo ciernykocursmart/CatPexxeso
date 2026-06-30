@@ -2,7 +2,7 @@
   "name": "cat-pexeso",
   "version": "1.0.0",
   "description": "Cat Pexeso - Cute Cat Memory Game",
-  "author": "Lukes",
+  "author": "Kocur",
   "main": "src/main.js",
   "scripts": {
     "start": "electron .",
@@ -18,7 +18,7 @@
     },
     "appx": {
       "publisher": "CN=CatPexesoPublisher",
-      "publisherDisplayName": "Lukes",
+      "publisherDisplayName": "Kocur",
       "identityName": "com.catpexeso.game"
     },
     "directories": {
