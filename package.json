@@ -2,6 +2,7 @@
   "name": "cat-pexeso",
   "version": "1.0.0",
   "description": "Cat Pexeso - Cute Cat Memory Game",
+  "author": "ciernykocursmart",
   "main": "src/main.js",
   "scripts": {
     "start": "electron .",
@@ -15,7 +16,7 @@
         "msix"
       ]
     },
-    "msix": {
+    "appx": {
       "publisher": "CN=CatPexesoPublisher",
       "identityName": "com.catpexeso.game"
     },
