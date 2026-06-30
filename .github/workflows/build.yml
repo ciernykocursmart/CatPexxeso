@@ -24,7 +24,7 @@ jobs:
         run: npm install
 
       - name: Build MSIX Package
-        run: npx electron-builder --win msix
+        run: npx electron-builder --win appx
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -32,5 +32,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: cat-pexeso-msix
-          path: dist/*.msix
+          path: dist/*.appx
           if-no-files-found: error
