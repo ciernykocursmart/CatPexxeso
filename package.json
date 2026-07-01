@@ -1,7 +1,7 @@
 {
   "name": "cat-pexeso",
   "version": "1.0.0",
-  "description": "Cat Pexeso - Cute Cat Memory Game",
+  "description": "Cat Pexeso Game - Cute Cat Memory Game",
   "author": "Kocur",
   "main": "src/main.js",
   "scripts": {
@@ -9,8 +9,8 @@
     "build": "electron-builder"
   },
   "build": {
-    "appId": "59513Lukes.CatPexeso",
-    "productName": "Cat Pexeso",
+    "appId": "59513Lukes.CatPexesoGame",
+    "productName": "Cat Pexeso Game",
     "win": {
       "target": [
         "appx"
@@ -19,8 +19,8 @@
     "appx": {
       "publisher": "CN=5B8EDAC0-7E93-4119-961E-9118180BF0FD",
       "publisherDisplayName": "Kocur",
-      "identityName": "59513Lukes.CatPexeso",
-      "applicationId": "CatPexeso"
+      "identityName": "59513Lukes.CatPexesoGame",
+      "applicationId": "CatPexesoGame"
     },
     "directories": {
       "output": "dist"
